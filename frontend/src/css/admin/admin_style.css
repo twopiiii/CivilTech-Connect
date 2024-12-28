@@ -1,0 +1,207 @@
+.text-danger {
+  font-size: 12px !important;
+}
+
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.admin-layout .admin-content-container {
+  width: 100%;
+  padding: 50px 60px 50px 320px;
+}
+
+.basic-info-section {
+  padding-bottom: 50px;
+}
+
+.manage-title {
+  padding: 5px 20px;
+  border-bottom: 1px solid #7e7e7e;
+}
+
+.manage-title h3 {
+  font-weight: 700;
+}
+
+.table-container,
+.other-action-container {
+  margin: 50px 25px;
+}
+
+.table-container .row .search-student,
+.table-container .row .select-file-to-view {
+  margin-bottom: 10px;
+}
+
+.table-container .row .search-student label,
+.table-container .row .select-file-to-view label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.table-container .row .search-student input,
+.table-container .row .select-file-to-view select {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #848484;
+  outline: none;
+}
+
+.td-has-button button {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-container button {
+  border: none;
+  background-color: #145da0;
+  color: white;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-container button:last-child {
+  margin: 0;
+}
+
+.btn-container button:hover {
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.table-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+th {
+  background-color: #145da0;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+td {
+  font-size: 14px;
+}
+
+.td-action i {
+  font-size: 17px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(244, 244, 244);
+}
+
+.td-action i {
+  display: inline;
+}
+
+.pagination-controls {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.pagination-controls button {
+  margin: 0 3px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #145da0;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination-controls button.active,
+.pagination-controls button:disabled {
+  opacity: 0.5;
+}
+
+/* Change Pass */
+.changePass-admin-container {
+  display: flex;
+}
+
+.changePass-admin-container form {
+  width: 650px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.changePass-admin-container form .changePass-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.changePass-admin-container form .changePass-title h3 {
+  font-weight: bold;
+}
+
+.changePass-admin-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.changePass-admin-container form .form-group label {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.changePass-admin-container form .form-group input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.changePass-admin-container form .form-group-btn {
+  margin-top: 30px;
+}
+
+.changePass-admin-container form .form-group-btn button {
+  width: 100%;
+  background-color: #145da0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.changePass-admin-container form .form-group-btn button:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1272px) {
+  .admin-layout .admin-content-container {
+    padding: 50px 10px 50px 230px;
+  }
+}

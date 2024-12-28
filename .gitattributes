@@ -1,0 +1,2 @@
+"frontend/src/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text" 
+frontend/src/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text

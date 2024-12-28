@@ -1,0 +1,130 @@
+.footer-section {
+  background-color: #0a3472;
+  color: white;
+}
+
+.footer-content {
+  width: 90%;
+  margin: 0 5%;
+  padding: 50px 0 90px 0;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logos img {
+  width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logos .ct_logo {
+  width: 85px;
+  height: 85px;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.credit .desc p {
+  font-size: 16px;
+}
+
+.footer-list-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-features li,
+.footer-contactInfo li {
+  margin-bottom: 10px;
+}
+
+.footer-features li a,
+.footer-contactInfo li i {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-features li a:hover {
+  color: rgb(79, 79, 255);
+  text-decoration: underline;
+}
+
+.footer-contactInfo li {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-contactInfo li .media {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.footer-contactInfo li p {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.footer-socials li {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.footer-socials li:first-child {
+  margin-left: 0;
+}
+
+.footer-contactInfo li i {
+  font-size: 18px;
+  /* border: 1px solid white;
+    border-radius: 50px;
+    background-color: white; */
+  padding: 10px;
+  /* color: #145da0; */
+  color: white;
+}
+
+@media only screen and (max-width: 497px) {
+  .logos img {
+    width: 80px;
+  }
+
+  .logos .ct_logo {
+    width: 65px;
+    height: 70px;
+  }
+
+  .credit .desc p {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .credit {
+    margin-bottom: 50px;
+  }
+
+  .footer-features,
+  .footer-contactInfo,
+  .footer-socials {
+    margin-bottom: 30px;
+  }
+
+  .footer-socials {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .credit,
+  .footer-features {
+    margin-bottom: 40px;
+  }
+}

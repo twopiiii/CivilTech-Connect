@@ -1,0 +1,84 @@
+.learning-resources-content,
+.resources-container {
+  width: 70%;
+  margin: 0 15%;
+  transition: all 0.3s ease-in-out;
+}
+
+.learning-resources-heading .title {
+  margin-left: 30px;
+  font-size: 35px;
+}
+
+.learning-resources-overview {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.resources-container {
+  /* margin-top: 100px; */
+  margin-bottom: 80px;
+}
+
+.resources-container .course-title {
+  margin-bottom: 10px;
+}
+
+.resources-container .course-title h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.accordion-body {
+  background-color: #f3f7ff !important;
+  padding: 30px 50px;
+}
+
+.reviewer-link {
+  margin-bottom: 40px;
+}
+
+.reviewer-link:last-child {
+  margin-bottom: 0;
+}
+
+/* .reviewer-link h5 {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 700 !important;
+  text-transform: capitalize;
+} */
+
+.reviewer-link a {
+  /* font-style: italic; */
+  font-size: 15px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reviewer-link a:hover,
+.reviewer-link a:focus {
+  text-decoration: underline;
+}
+
+.reviewer-link p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .learning-resources-content,
+  .resources-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .learning-resources-section {
+    margin-top: 160px;
+  }
+}

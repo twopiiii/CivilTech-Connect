@@ -1,0 +1,639 @@
+.navigationBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+/*  ====    Top Nav    ====    */
+
+.topNav {
+  background-color: #051d40;
+  padding: 12px 0;
+}
+
+.topNav .row .logo-container,
+.topNav .row .login-btn-container {
+  padding: 0;
+}
+
+.topNav .row .logo-container img {
+  width: 85px;
+  height: 85px;
+  margin-left: 180px;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.topNav .row .login-btn-container .login-btn {
+  /* width: 140px; */
+  margin-right: 180px;
+  padding: 10px 50px;
+  border: none;
+  /* border-radius: 7px; */
+  /* box-shadow: rgba(199, 199, 199, 0.446) 2.4px 2.4px 3.2px; */
+  background-color: #145da0;
+  text-transform: uppercase;
+  color: rgb(245, 245, 245);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.topNav .row .login-btn-container .login-btn:hover,
+.topNav .row .login-btn-container .login-btn:focus {
+  /* box-shadow: rgba(199, 199, 199, 0.889) 3px 3px 4px; */
+  /* box-shadow: rgba(199, 199, 199, 0.889) 3px 3px 4px; */
+  background-color: #125089;
+  letter-spacing: 4px;
+}
+
+.user-login-title {
+  color: black !important;
+}
+
+.user-login-header {
+  margin: 0 !important;
+}
+
+.user-login-modal-content {
+  padding: 20px 10px !important;
+}
+
+.notification-icon-container {
+  margin-right: 20px;
+  background-color: white;
+  /* background-color: #ffbd59; */
+  padding: 7px 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.notification-icon-container svg path {
+  /* color: #ffbd59 !important; */
+  color: #051d40;
+}
+
+.user-icon-dropdown,
+.user-notification-dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  /* background-color: #ffbd59; */
+  padding: 7px 10px;
+  margin-right: 180px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.user-notification-dropdown {
+  margin-right: 20px !important;
+}
+
+.user-icon-loggedIn {
+  /* color: #ffbd59 !important; */
+  color: #051d40;
+}
+
+.icon-active {
+  background-color: #ffbd59 !important;
+}
+
+.user-icon-dropdown-svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.user-icon-dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-icon-dropdown-menu ul li {
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-icon-dropdown-menu ul li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.user-icon-dropdown-menu ul li:hover {
+  background-color: #f0f0f0;
+  letter-spacing: 2px;
+  color: red !important;
+}
+
+.user-icon-dropdown-menu ul .change-pass-link:hover {
+  color: black !important;
+  background-color: #f0f0f0;
+  letter-spacing: 2px;
+}
+
+.user-icon-dropdown-menu ul .change-pass-link:hover a {
+  color: black !important;
+  letter-spacing: 2px;
+}
+
+.user-icon-dropdown-menu ul li i,
+.user-icon-dropdown-menu ul li a i {
+  padding: 0 10px 0 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-icon-dropdown .user-icon-dropdown-menu {
+  display: block;
+}
+
+.icon-studentName {
+  font-weight: 700;
+  margin: 0 0 3px 0;
+  color: white;
+}
+
+.icon-studentNumber,
+.icon-studentCourse {
+  font-size: 13px;
+  margin: 0;
+  color: #e6e6e6;
+}
+
+.user-icon-dropdown-menu,
+.user-notification-dropdown-menu {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #145da0;
+  /* background-color: white; */
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  color: white;
+  width: 400px;
+  display: none;
+  padding: 20px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-notification-dropdown-menu {
+  background-color: white !important;
+  border-radius: 5px !important;
+  height: 100vh !important;
+  right: -60px !important;
+  padding: 20px 0 0 0 !important;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.user-notification-dropdown .user-notification-dropdown-menu {
+  display: block;
+}
+
+.notif-title {
+  padding: 0 20px !important;
+}
+
+.notif-title h5 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.notif-title h6 {
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  margin-bottom: 0;
+}
+
+.new-notif {
+  margin-bottom: 15px;
+}
+
+.notifications {
+  /* color: #dfdfdf; */
+  color: rgb(49, 49, 49);
+  margin-bottom: 0px;
+}
+
+.notifications p {
+  font-size: 14px;
+  margin-bottom: 2px;
+  padding: 10px 20px 0 20px !important;
+}
+
+.notifications p:first-child {
+  padding-top: 5px !important;
+}
+
+.notifications p i {
+  font-size: 8px;
+  padding: 0;
+  /* color: #ffbd59; */
+  color: #145da0;
+}
+
+.notif-time {
+  text-align: left;
+}
+
+.notif-time p {
+  font-size: 11px;
+  font-weight: 700;
+  /* color: #ffbd59; */
+  color: #125089;
+  margin-bottom: 0;
+  padding: 0 20px 10px 20px !important;
+}
+
+.unread {
+  background-color: #a3a3a33c;
+}
+
+/* .user-login-modal-body {
+  padding-bottom: 30px !important;
+} */
+
+/*  ====    Burger Button    ====    */
+.burger-menu {
+  width: 35px;
+  height: 25px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger-menu div {
+  display: none;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-menu div .line1,
+.burger-menu div .line2,
+.burger-menu div .line3 {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.burger-menu div:last-child {
+  margin-bottom: 0;
+}
+
+.burger-btn.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-btn.open .line2 {
+  opacity: 0 !important;
+}
+
+.burger-btn.open .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-menu {
+  display: none;
+  position: fixed;
+  align-items: center;
+  top: 97px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  color: white;
+  background-color: #0a3472;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.show-menu {
+  height: auto !important;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu ul hr {
+  margin: 0;
+}
+
+.nav-menu ul li {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-menu ul li:hover,
+.nav-menu ul li:focus {
+  background-color: white;
+  color: #0a3472;
+}
+
+.nav-menu ul li:hover a,
+.nav-menu ul li:focus a {
+  color: #0a3472;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.burger-studentNumber {
+  margin: 40px 0 0 0;
+  font-size: 13px;
+  color: #e6e6e6;
+}
+
+.burger-studentCourse {
+  margin: 3px 0 0 0;
+  font-size: 13px;
+  color: #e6e6e6;
+}
+
+.burger-studentName {
+  margin: 10px 0 40px 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.modal-header-edit {
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.modal-header-edit h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* .modal-header-edit p {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: rgb(84, 84, 84);
+} */
+
+.modal-body form {
+  padding: 10px 20px;
+}
+
+/* .modal-body form .IDNumber-container {
+    margin-bottom: 20px !important;
+} */
+
+.modal-body form .IDNumber-container label,
+.modal-body form .password-container label {
+  font-weight: 700;
+  font-size: 11px;
+  /* margin-bottom: 5px; */
+  display: block;
+  text-transform: uppercase;
+}
+
+.modal-body form .IDNumber-container input,
+.modal-body form .password-container input {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #959595;
+  width: 100%;
+}
+
+.modal-body form .IDNumber-container input:focus,
+.modal-body form .password-container input:focus,
+.modal-body form .IDNumber-container input:active,
+.modal-body form .password-container input:active {
+  outline: none;
+  border-bottom: 2px solid #145da0;
+}
+
+.modal-body form .password-container .forgot-password-container {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.modal-body
+  form
+  .password-container
+  .forgot-password-container
+  .forgot-password {
+  font-size: 12px;
+  color: rgb(0, 0, 212);
+  text-decoration: none;
+  font-style: italic;
+}
+
+.modal-body
+  form
+  .password-container
+  .forgot-password-container
+  .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.modal-body form .IDNumber-container {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0 20px !important;
+}
+
+.modal-footer button {
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 1px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-footer button:hover {
+  opacity: 0.7;
+  /* margin-top: -10px; */
+}
+
+.modal-footer .close-btn {
+  background-color: rgb(197, 0, 0);
+}
+
+.modal-footer .proceed-login-btn {
+  background-color: #145da0;
+  /* display: block; */
+}
+
+/*  ====    Bottom Nav    ====    */
+.bottomNav {
+  background-color: #0a3472;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.bottomNav ul {
+  margin: 0 140px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottomNav ul li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bottomNav ul li a:hover {
+  background-color: #1c74c7;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottomNav ul li .active {
+  background-color: #145da0 !important;
+  /* letter-spacing: 3px; */
+}
+
+.bottomNav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
+@media only screen and (max-width: 339px) {
+  .user-notification-dropdown-menu {
+    width: 310px;
+  }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 369px) {
+  .user-notification-dropdown-menu {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 399px) {
+  .user-notification-dropdown-menu {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .topNav .row .logo-container img {
+    width: 64px;
+    height: 60px;
+  }
+
+  .nav-menu.show-menu {
+    margin-top: -14px !important;
+  }
+
+  .homeSection {
+    margin-top: 83px !important;
+  }
+
+  .learning-resources-section {
+    margin-top: 130px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+  .bottomNav ul {
+    margin: 0 50px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-notification-dropdown-menu {
+    right: -113px !important;
+  }
+
+  .burger-menu div {
+    display: block;
+  }
+
+  .user-notification-dropdown {
+    margin-right: 40px !important;
+  }
+
+  .user-icon-dropdown,
+  .user-icon-dropdown-menu {
+    display: none !important;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .topNav .row .logo-container img {
+    margin-left: 50px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .user-icon-loggedIn {
+    display: none;
+  }
+
+  .bottomNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1310px) {
+  .topNav .row .logo-container img {
+    margin-left: 100px;
+  }
+
+  .user-icon-dropdown {
+    margin: 0 !important;
+  }
+
+  .user-icon-dropdown-menu {
+    right: 0 !important;
+  }
+
+  .topNav .row .login-btn-container .login-btn {
+    margin-right: 100px;
+  }
+}

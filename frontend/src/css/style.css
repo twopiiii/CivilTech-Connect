@@ -1,0 +1,277 @@
+/* .appContainer {
+    display: flex;
+    flex-direction: column;
+} */
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-danger {
+  font-size: 12px !important;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background-color: black;
+  /* margin-right: 25px; */
+}
+
+.fa {
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.learning-resources-section {
+  margin-top: 230px;
+  transition: all 0.3s ease-in-out;
+}
+
+.job-opportunities-section {
+  margin-top: 200px;
+}
+
+.no-desc {
+  color: #808080;
+  font-style: italic;
+}
+
+.company-card {
+  width: 60% !important;
+  margin: 0 auto 50px auto !important;
+}
+
+.card-img-top {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto 5px auto;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 30px !important;
+}
+
+.company-card-text {
+  margin-bottom: 40px !important;
+}
+
+.company-card-btn {
+  padding: 10px !important;
+}
+
+.company-card-img {
+  width: 130px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.card-desc-title {
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+}
+
+.job-desc-ul {
+  margin-bottom: 20px;
+}
+
+.changePass-container,
+.forgotPass-container {
+  width: 30%;
+  margin: 230px auto;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.changePass-form-container {
+  text-align: left;
+}
+
+.changePass-form-container h4 {
+  font-weight: 700;
+}
+
+.changePass-form-container p {
+  color: #646464;
+  font-size: 13px;
+}
+.changePass-form-container form {
+  margin-top: 25px;
+}
+
+.changePass-form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.changePass-form-container form .form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(47, 47, 47);
+}
+
+.changePass-form-container form .form-group input {
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+.changePass-form-container form .form-group-btn {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.changePass-form-container form .form-group-btn button {
+  color: white;
+  background-color: #145da0;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.changePass-form-container form .form-group-btn button:hover {
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.reset-link-success-container {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f8f9fa; */
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  z-index: 1000;
+}
+
+.reset-link-success {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  .company-card {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .changePass-container,
+  .forgotPass-container {
+    width: 90%;
+    margin-top: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .changePass-container,
+  .forgotPass-container {
+    width: 70%;
+    margin-top: 180px !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1296px) {
+  .changePass-container,
+  .forgotPass-container {
+    width: 60%;
+    margin-top: 280px !important;
+  }
+
+  .learning-resources-section {
+    margin-top: 280px;
+  }
+
+  .learning-resources-content,
+  .resources-container {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+
+  .job-opportunities-section {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (min-width: 1297px) and (max-width: 1440px) {
+  .changePass-container,
+  .forgotPass-container {
+    width: 50%;
+  }
+}

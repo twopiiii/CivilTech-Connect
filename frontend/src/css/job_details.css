@@ -1,0 +1,127 @@
+.breadcrumb-edit {
+  width: 70%;
+  margin: 220px auto 20px auto !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-item {
+  font-size: 14px;
+}
+
+.details-section {
+  width: 60% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-container {
+  text-align: left;
+  /* display: flex;
+  align-items: flex-start; */
+  gap: 20px;
+}
+
+.details-container img {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.details-text {
+  /* flex: 1;  */
+  font-size: 14px;
+  color: #333;
+}
+
+.details-text h3 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  /* font-size: 20px; */
+}
+
+.address-text {
+  margin: 0 !important;
+  text-transform: capitalize;
+  /* color: #6b6b6b; */
+  font-size: 14px;
+}
+
+.address-text span {
+  font-weight: 700;
+}
+
+.company-description-container {
+  margin: 30px 0;
+}
+
+.company-desc-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.desc-text {
+  font-size: 14px;
+  margin: 0 !important;
+}
+
+.other-details-text {
+  margin-top: 30px;
+}
+
+.other-details-text p {
+  font-size: 15px;
+}
+
+.hiring-details {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.hiring-info {
+  font-weight: 700;
+}
+
+.hiring-info span {
+  font-weight: 400;
+}
+
+.company-card-btn {
+  margin-top: 20px !important;
+  padding: 10px 100px !important;
+  width: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .breadcrumb-edit {
+    margin-top: 150px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-edit {
+    margin-top: 0 !important;
+    width: 90% !important;
+  }
+
+  .job-details-section {
+    margin-top: 130px !important;
+  }
+
+  .details-section {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .details-section {
+    width: 90% !important;
+  }
+
+  .company-card-btn {
+    padding: 10px 0 !important;
+    width: 100% !important;
+  }
+}

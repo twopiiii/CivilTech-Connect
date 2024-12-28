@@ -1,0 +1,74 @@
+.refer-company-section {
+  background-color: rgba(217, 217, 217, 0.29);
+  padding: 50px 0;
+}
+
+.referal-form {
+  width: 45%;
+  margin: 0 27.5%;
+}
+
+.referal-form .form .title {
+  text-align: center;
+}
+.referal-form .form .title h3 {
+  font-weight: 700;
+}
+
+.referal-form .form .title p {
+  text-transform: capitalize;
+}
+
+.referal-form .form {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px 40px;
+  width: 60%;
+  margin: 0 20%;
+}
+
+.referal-form .form form div input {
+  margin-bottom: 10px;
+  padding: 13px 10px;
+  background-color: transparent;
+  border: 1px solid #6e6e6e;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.ojt-refer-title {
+  margin-top: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ojt-change-padding {
+  padding: 80px 0 90px 0 !important;
+}
+
+.application-btn-submit {
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  background-color: #145da0;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.application-btn-submit:hover,
+.application-btn-submit:focus {
+  background-color: #145da0;
+  opacity: 0.8;
+  letter-spacing: 3px;
+}
+
+.ojt-apply-button {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .ojt-refer-title {
+    margin-top: 0 !important;
+  }
+}
